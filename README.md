@@ -7,6 +7,7 @@
 * nug22kr@gmail.com
 
 ### Setup
+```wget https://raw.githubusercontent.com/yousung/ubuntu16.04-php7.2-install/master/script/install-php7.2.sh``` <br/>
 ```adduser user-id``` <br/>
 ```usermod -G www-data user-id``` <br/>
 ```id user-id``` <br/>
