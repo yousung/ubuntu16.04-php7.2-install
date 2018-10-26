@@ -121,5 +121,5 @@ server {
 }
 "
 echo "$block" > "/etc/nginx/sites-available/$1"
-service nginx restart
-service php7.2-fpm restart
+service nginx stop && service php7.2-fpm stop
+service nginx start && service php7.2-fpm start

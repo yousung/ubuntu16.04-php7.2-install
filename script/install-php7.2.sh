@@ -22,9 +22,9 @@ locale-gen en_US.UTF-8
 
 # 기본적인 ETC 설치 및 ppa 추가
 apt-get install -y software-properties-common curl
-apt-add-repository ppa:nginx/stable -y
+#apt-add-repository ppa:nginx/stable -y
 #apt-add-repository ppa:rwky/redis -y
-apt-add-repository ppa:ondrej/php -y
+#apt-add-repository ppa:ondrej/php -y
 
 
 # 패지키 리스트 업데이트
@@ -146,9 +146,9 @@ service php7.2-fpm restart
 
 pecl install mcrypt-snapshot
 
-apt-get install -y --force-yes memcached #beanstalkd redis-server
+apt-get install -y --force-yes memcached redis-server #beanstalkd
 
 # 메모리 스왑
-/bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024
-/sbin/mkswap /var/swap.1
-/sbin/swapon /var/swap.1
+#/bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024
+#/sbin/mkswap /var/swap.1
+#/sbin/swapon /var/swap.1
